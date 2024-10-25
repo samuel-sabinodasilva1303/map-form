@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Google Maps</h1>
+    <h1>Maps</h1>
     <MapComponent />
   </div>
 </template>

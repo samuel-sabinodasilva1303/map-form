@@ -5,7 +5,7 @@
       <div class="saved-shapes">
         <h2>Formas Salvas</h2>
         <ul>
-          <li v-for="(shape, index) in shapes" :key="index">
+          <li class="saved-shapes--images" v-for="(shape, index) in shapes" :key="index">
             <img :src="shape.imageUrl" alt="Forma Salva" />
             <button @click="deleteShape(index)">Excluir</button>
             <button @click="removeShapeFromMap(index)">Remover do Mapa</button>
@@ -123,24 +123,39 @@
   <style scoped>
   .container {
     display: flex;
+    margin-top: 1em;
   }
   .map-container {
-    width: 70%;
-    height: 500px;
+    width: 1200px;
+    height: 400px;
   }
   .saved-shapes {
-    width: 30%;
-    padding: 10px;
-    overflow-y: auto;
-  }
-  .saved-shapes img {
-    width: 100%;
-    margin-top: 10px;
+    width: 1200px;
+    height: 400px;
+    overflow: auto;
   }
   .saved-shapes button {
     margin-top: 5px;
+    border: 1px solid #c6c6c6;
     cursor: pointer;
   }
-
+  .saved-shapes--images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+    @media (max-width: 768px) {
+        .container{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2em;
+        }
+        .saved-shapes, .map-container{
+            height: 600px;
+            width: 400px;
+        }
+    }
   </style>
   
