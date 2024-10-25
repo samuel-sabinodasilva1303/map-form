@@ -39,8 +39,8 @@
       },
       initMap() {
         this.map = new google.maps.Map(this.$refs.mapContainer, {
-          center: { lat: -15.7942, lng: -47.8822 },
-          zoom: 12,
+          center: { lat: -22.10367, lng: -50.19013 },
+          zoom: 13,
         });
   
         this.drawingManager = new google.maps.drawing.DrawingManager({
