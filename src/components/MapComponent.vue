@@ -41,6 +41,8 @@
         this.map = new google.maps.Map(this.$refs.mapContainer, {
           center: { lat: -22.10367, lng: -50.19013 },
           zoom: 13,
+          gestureHandling: "cooperative",
+
         });
   
         this.drawingManager = new google.maps.drawing.DrawingManager({
@@ -144,6 +146,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 10px;
   }
     @media (max-width: 768px) {
         .container{
@@ -155,6 +158,9 @@
         .saved-shapes, .map-container{
             height: 600px;
             width: 400px;
+        }
+        .saved-shapes--images{
+          width: 95%;
         }
     }
   </style>
