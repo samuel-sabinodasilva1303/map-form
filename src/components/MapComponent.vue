@@ -146,11 +146,11 @@
           }
 
           const circlePoints = [];
-          const numPoints = 36; 
+          const numPoints = 40; 
           for (let i = 0; i < numPoints; i++) {
             const angle = (i / numPoints) * 2 * Math.PI; 
-            const lat = center.lat + (radius / 100900) * Math.cos(angle);
-            const lng = center.lng + (radius / (100900 * Math.cos(center.lat * (Math.PI / 180)))) * Math.sin(angle);
+            const lat = center.lat + (radius / 109000) * Math.cos(angle);
+            const lng = center.lng + (radius / (109000 * Math.cos(center.lat * (Math.PI / 180)))) * Math.sin(angle);
             circlePoints.push(`${lat},${lng}`);
           }
 
