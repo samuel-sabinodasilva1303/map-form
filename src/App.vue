@@ -6,11 +6,11 @@
 </template>
 
 <script>
-  import MapComponent from "./components/MapComponent.vue";
+import MapComponent from "./components/MapComponent.vue";
 
-  export default {
-    components: {
-      MapComponent,
-    },
-  };
+export default {
+  components: {
+    MapComponent,
+  },
+};
 </script>

@@ -71,7 +71,6 @@ button {
 }
 button:hover {
   border-color: #646cff;
-  opacity: 0.5;
 }
 button:focus,
 button:focus-visible {
@@ -85,7 +84,7 @@ button:focus-visible {
 #app {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
 }
 
