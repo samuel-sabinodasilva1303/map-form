@@ -48,6 +48,9 @@ export default {
     flex-direction: column;
     padding-bottom: 10px;
   }
+  .saved-shapes--images img{
+    width: 96%;
+  }
   @media (max-width: 768px) {
   .saved-shapes{
     width: 100%;
